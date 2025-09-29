@@ -249,3 +249,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.11
 
 - showNoBreadcrumb.html in show all
+
+### 1.1.12
+
+- verticalWithDate.html started

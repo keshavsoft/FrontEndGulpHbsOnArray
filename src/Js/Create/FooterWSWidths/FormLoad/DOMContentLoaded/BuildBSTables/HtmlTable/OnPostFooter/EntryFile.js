@@ -3,7 +3,7 @@ import { StartFunc as StartFuncFromForDefaultValue } from "./forDefaultValue.js"
 let StartFunc = (inData, inOptions) => {
     // const k1 = inOptions.$tableFooter[0].querySelectorAll("th")[1].querySelector("input");
     const jVarLocalColumns = inOptions.columns;
-    console.log("jVarLocalColumns", jVarLocalColumns);
+    // console.log("jVarLocalColumns", jVarLocalColumns);
     const jVarLocalFooterCells = inOptions.$tableFooter[0].querySelectorAll("th");
 
     StartFuncFromForDefaultValue({
