@@ -245,3 +245,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.10
 
 - import table show good but upload not tested
+
+### 1.1.11
+
+- showNoBreadcrumb.html in show all
