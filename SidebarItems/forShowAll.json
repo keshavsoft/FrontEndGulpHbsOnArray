@@ -35,6 +35,18 @@
                 "DisplayName": "No Breadcrumb",
                 "IconClass": "bi bi-eye",
                 "SpanClass": "text-success"
+            },
+            {
+                "SubItemName": "noBCWithPk",
+                "DisplayName": "noBCWithPk",
+                "IconClass": "bi bi-eye",
+                "SpanClass": "text-success"
+            },
+            {
+                "SubItemName": "noBCWithPkAndTS",
+                "DisplayName": "noBCWithPkAndTS",
+                "IconClass": "bi bi-eye",
+                "SpanClass": "text-success"
             }
         ]
     },

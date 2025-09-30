@@ -1,10 +1,20 @@
 {
-    "tableName": "ItemsTable",
+    "tableName": "BillsTable",
     "columns": [
         {
-            "field": "ItemName",
-            "title": "ItemName",
-            "unique": true,
+            "field": "BuyerName",
+            "title": "BuyerName",
+            "type": "text",
+            "isInput": true,
+            "isAutoFocus": true,
+            "WidthOptions": {
+                "inPx": 200
+            },
+            "defaultvalue": "Keshav"
+        },
+        {
+            "field": "BuyerAddress",
+            "title": "BuyerAddress",
             "type": "text",
             "isInput": true,
             "isAutoFocus": true,
@@ -13,9 +23,8 @@
             }
         },
         {
-            "field": "ItemNameAlias",
-            "title": "ItemNameAlias",
-            "unique": true,
+            "field": "BuyerGST",
+            "title": "BuyerGST",
             "type": "text",
             "isInput": true,
             "isAutoFocus": true,
@@ -24,82 +33,36 @@
             }
         },
         {
-            "field": "ItemCode",
-            "title": "ItemCode",
-            "unique": true,
-            "type": "text",
+            "field": "InvoiceNo",
+            "title": "InvoiceNo",
+            "type": "number",
             "isInput": true,
             "WidthOptions": {
                 "inPx": 200
             }
         },
         {
-            "field": "Rate",
-            "title": "Rate",
-            "unique": false,
-            "type": "number",
-            "isNumber": true
+            "field": "InvoiceDate",
+            "title": "InvoiceDate",
+            "isDate": true,
+            "type": "date",
+            "WidthOptions": {
+                "inPx": 200
+            },
+            "defaultvalue": "today"
         },
         {
-            "field": "GstPercentage",
-            "title": "Gst %",
-            "unique": false,
-            "type": "number",
-            "isNumber": true,
-            "defaultvalue": 18
-        },
-        {
-            "field": "hsn",
-            "title": "hsn",
-            "unique": false,
-            "type": "number",
-            "isNumber": true
+            "field": "InvoiceStateCode",
+            "title": "InvoiceStateCode",
+            "defaultvalue": "37",
+            "isInput": true,
+            "WidthOptions": {
+                "inPx": 200
+            }
         }
     ],
     "data": [],
-    "Vertical": [
-        {
-            "field": "ItemName",
-            "title": "ItemName",
-            "unique": true,
-            "type": "text",
-            "isInput": true,
-            "isAutoFocus": true,
-            "WidthOptions": {
-                "inPx": 200
-            }
-        },
-        {
-            "field": "ItemCode",
-            "title": "ItemCode",
-            "unique": false,
-            "type": "text",
-            "isInput": true,
-            "WidthOptions": {
-                "inPx": 200
-            }
-        },
-        {
-            "field": "Rate",
-            "title": "Rate",
-            "unique": false,
-            "type": "number",
-            "isNumber": true,
-            "WidthOptions": {
-                "inPx": 200
-            }
-        },
-        {
-            "field": "GstPercentage",
-            "title": "Gst %",
-            "unique": false,
-            "type": "number",
-            "isNumber": true,
-            "WidthOptions": {
-                "inPx": 200
-            }
-        }
-    ],
+    "Vertical": [],
     "DataTableOptions": {
         "Header": {
             "autoFocus": "ItemName"
@@ -108,12 +71,9 @@
     "DefaultObjectToInsert": {
         "Simple": {
             "ItemName": "om namo venkateswara",
-            "ItemCode": "1",
-            "ItemNameAlias": "",
-            "Rate": 616,
-            "GstPercentage": 18,
-            "hsn": 8714,
-            "pk": 65
+            "Rate": 0,
+            "Qty": 0,
+            "Amount": 0
         }
     }
 }

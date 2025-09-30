@@ -253,3 +253,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.12
 
 - verticalWithDate.html started
+
+### 1.1.13
+
+- showall added
