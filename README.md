@@ -257,3 +257,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.13
 
 - showall added
+
+### 1.1.14
+
+- footer insert url changed
