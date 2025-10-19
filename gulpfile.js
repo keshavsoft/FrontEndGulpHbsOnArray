@@ -37,7 +37,10 @@ dotenv.config();
 const CommonColumns = require("./schema.json");
 const SideBarItems = require("./SidebarItems/SideBar.json");
 const SideBarForCalender = require("./SidebarItems/forCalender.json");
-const CommonSideBarsImportJson = require("./SideBars/import.json");
+// const CommonSideBarsImportJson = require("./SideBars/import.json");
+
+const CommonSideBarsImportJson = require("./SidebarItems/forImport.json");
+
 const SideBarItemsForShowAll = require("./SidebarItems/forShowAll.json");
 const SideBarForRead = require("./SidebarItems/forRead.json")
 const SideBarItemsforCreate = require("./SidebarItems/forCreate.json");

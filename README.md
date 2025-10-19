@@ -261,3 +261,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.14
 
 - footer insert url changed
+
+### 1.1.15
+
+- import from excel with replace on some chars not tested till...
