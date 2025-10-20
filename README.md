@@ -265,3 +265,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.15
 
 - import from excel with replace on some chars not tested till...
+
+### 1.1.16
+
+- import from excel perfect with number data type also

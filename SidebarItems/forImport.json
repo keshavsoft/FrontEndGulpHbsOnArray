@@ -16,5 +16,11 @@
         "DisplayName": "ExcelWithExclude",
         "IconClass": "bi bi-download",
         "SpanClass": "text-success"
+    },
+    {
+        "Name": "fromExcelWithExcAllCols",
+        "DisplayName": "ExcelWithExcAllColumns",
+        "IconClass": "bi bi-download",
+        "SpanClass": "text-success"
     }
 ]
