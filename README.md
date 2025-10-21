@@ -274,3 +274,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 
 - fromExcelWithExcAllCols table column head shown field
 
+### 1.1.18
+
+- fromExcelWithExcAllCols KS_Date column name changed
+

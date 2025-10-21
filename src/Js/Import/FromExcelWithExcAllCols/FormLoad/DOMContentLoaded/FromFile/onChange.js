@@ -1,4 +1,5 @@
 import { StartFunc as showInTable } from "./showInTable.js";
+const CommonDateColumnName = "KS_Date";
 
 const StartFunc = (event) => {
     const file = event.target.files[0];
@@ -23,12 +24,12 @@ const StartFunc = (event) => {
 
                 return {
                     ...LoopInsideOject,
-                    Date: excelDateToJSDate(LoopInsideOject["KS-Date"]).toLocaleDateString('en-CA')
+                    Date: excelDateToJSDate(LoopInsideOject[CommonDateColumnName]).toLocaleDateString('en-CA')
                 }
             });
 
             // console.log("sheetData : ", XLSX.utils, sheetData, jVarLocalNewArray);
-            
+
             showInTable({ inData: jVarLocalNewArray });
         };
 
