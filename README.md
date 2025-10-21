@@ -269,3 +269,8 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.16
 
 - import from excel perfect with number data type also
+
+### 1.1.17
+
+- fromExcelWithExcAllCols table column head shown field
+
