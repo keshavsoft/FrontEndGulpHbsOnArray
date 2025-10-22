@@ -1,32 +1,9 @@
 {
-    "tableName": "JournalsTable",
+    "tableName": "TasksTable",
     "columns": [
         {
-            "field": "KS_Date",
-            "title": "DateAsNumber",
-            "unique": true,
-            "type": "text",
-            "isInput": true
-        },
-        {
-            "field": "Date",
-            "title": "Date",
-            "unique": true,
-            "type": "text",
-            "isInput": true,
-            "isAutoFocus": true
-        },
-        {
-            "field": "Narration",
-            "title": "Narration",
-            "unique": true,
-            "type": "text",
-            "isInput": true,
-            "isAutoFocus": true
-        },
-        {
-            "field": "ChqRefNo",
-            "title": "Chq./Ref.No.",
+            "field": "title",
+            "title": "Title",
             "unique": true,
             "type": "text",
             "isInput": true,
@@ -34,39 +11,36 @@
             "defaultvalue": "2nd"
         },
         {
-            "field": "ValueDt",
-            "title": "Value Dt",
-            "unique": true,
-            "type": "text",
-            "isInput": true,
-            "isAutoFocus": true,
-            "defaultvalue": "2nd"
+            "field": "start",
+            "title": "Start Date",
+            "unique": false,
+            "type": "date",
+            "isDate": true,
+            "WidthOptions": {
+                "inPx": 200
+            }
         },
         {
-            "field": "WithdrawalAmt",
-            "title": "Withdrawal Amt.",
-            "unique": true,
+            "field": "className",
+            "title": "Class Name",
+            "unique": false,
             "type": "text",
-            "isInput": true,
-            "isAutoFocus": true,
-            "isNumber": true,
-            "ShowDifference": true,
-            "align": "right",
-            "minusColumn": "DepositAmt",
-            "footerFormatter": "TotalFormatter"
-        },
-        {
-            "field": "DepositAmt",
-            "title": "Deposit Amt.",
-            "unique": true,
-            "type": "text",
-            "isInput": true,
-            "isAutoFocus": true,
-            "isNumber": true,
-            "ShowDifference": true,
-            "align": "right",
-            "minusColumn": "WithdrawalAmt",
-            "footerFormatter": "TotalFormatter"
+            "isInput": false,
+            "isSelect": true,
+            "isDataList": false,
+            "selectOptions": [
+                {
+                    "value": "bg-primary",
+                    "text": "bg-primary"
+                },
+                {
+                    "value": "bg-success",
+                    "text": "bg-success"
+                }
+            ],
+            "WidthOptions": {
+                "inPx": 250
+            }
         }
     ],
     "data": [],
@@ -78,6 +52,7 @@
     },
     "SubRoutes": [
         "Read",
-        "Insert"
+        "Insert",
+        "k1"
     ]
 }

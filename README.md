@@ -278,3 +278,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 
 - fromExcelWithExcAllCols KS_Date column name changed
 
+### 1.1.19
+
+- verticalWithImage need to test
+

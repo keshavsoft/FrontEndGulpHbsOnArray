@@ -55,5 +55,11 @@
         "DisplayName": "verticalWithDate",
         "IconClass": "bi bi-pen",
         "SpanClass": "text-danger"
+    },
+    {
+        "Name": "verticalWithImage",
+        "DisplayName": "VerticalWithImage",
+        "IconClass": "bi bi-pen",
+        "SpanClass": "text-danger"
     }
 ]
