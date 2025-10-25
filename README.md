@@ -282,3 +282,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 
 - verticalWithImage need to test
 
+### 1.1.20
+
+- UpdateBulkByPk in import started, update button and grid text need to be added
+
