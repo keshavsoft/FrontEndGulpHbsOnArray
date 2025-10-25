@@ -1,76 +1,118 @@
 {
-    "tableName": "JournalsTable",
+    "tableName": "StudentNames",
     "columns": [
         {
-            "field": "KS_Date",
-            "title": "DateAsNumber",
+            "field": "StudentName",
+            "title": "StudentName",
+            "unique": false,
+            "type": "text",
+            "isInput": true
+        },
+        {
+            "field": "Mobile",
+            "title": "Mobile",
+            "unique": true,
+            "type": "number",
+            "isInput": true
+        },
+        {
+            "field": "email",
+            "title": "email",
             "unique": true,
             "type": "text",
             "isInput": true
         },
         {
-            "field": "Date",
-            "title": "Date",
-            "unique": true,
+            "field": "CollegeName",
+            "title": "CollegeName",
+            "unique": false,
             "type": "text",
-            "isInput": true,
-            "isAutoFocus": true,
-            "isSortable": true
+            "isInput": false,
+            "isSelect": false,
+            "isDataList": true,
+            "selectOptions": [
+                {
+                    "value": "ACE",
+                    "text": "ACE"
+                },
+                {
+                    "value": "CMR",
+                    "text": "CMR"
+                }
+            ]
         },
         {
-            "field": "Narration",
-            "title": "Narration",
-            "unique": true,
+            "field": "Country",
+            "title": "Country",
+            "unique": false,
             "type": "text",
-            "isInput": true,
-            "isAutoFocus": true
+            "isInput": false,
+            "isSelect": false,
+            "isDataList": true,
+            "selectOptions": [
+                {
+                    "value": "India",
+                    "text": "India"
+                },
+                {
+                    "value": "Nepal",
+                    "text": "Nepal"
+                }
+            ]
         },
         {
-            "field": "ChqRefNo",
-            "title": "Chq./Ref.No.",
-            "unique": true,
-            "type": "text",
-            "isInput": true,
-            "isAutoFocus": true,
-            "defaultvalue": "2nd"
+            "field": "EntranceRank",
+            "title": "EntranceRank",
+            "unique": false,
+            "type": "number",
+            "isInput": true
         },
         {
-            "field": "ValueDt",
-            "title": "Value Dt",
-            "unique": true,
+            "field": "YearPassOut",
+            "title": "YearPassOut",
+            "unique": false,
             "type": "text",
-            "isInput": true,
-            "isAutoFocus": true,
-            "defaultvalue": "2nd",
-            "isSortable": true
+            "isInput": false,
+            "isSelect": false,
+            "isDataList": true,
+            "selectOptions": [
+                {
+                    "value": "2025",
+                    "text": "2025"
+                },
+                {
+                    "value": "2024",
+                    "text": "2024"
+                }
+            ]
         },
         {
-            "field": "WithdrawalAmt",
-            "title": "Withdrawal Amt.",
-            "unique": true,
-            "type": "text",
-            "isInput": true,
-            "isAutoFocus": true,
-            "isNumber": true,
-            "ShowDifference": true,
-            "align": "right",
-            "minusColumn": "DepositAmt",
-            "footerFormatter": "TotalFormatter",
-            "isSortable": true
+            "field": "Back_logs",
+            "title": "Back-logs",
+            "unique": false,
+            "type": "number",
+            "isInput": true
         },
         {
-            "field": "DepositAmt",
-            "title": "Deposit Amt.",
-            "unique": true,
+            "field": "RollNumber",
+            "title": "Roll Number",
+            "unique": false,
             "type": "text",
-            "isInput": true,
-            "isAutoFocus": true,
-            "isNumber": true,
-            "ShowDifference": true,
-            "align": "right",
-            "minusColumn": "WithdrawalAmt",
-            "footerFormatter": "TotalFormatter",
-            "isSortable": true
+            "isInput": true
+        },
+        {
+            "field": "file",
+            "title": "file",
+            "unique": false,
+            "type": "file",
+            "isInput": true
+        },
+        {
+            "field": "GitLink",
+            "title": "GitLink",
+            "unique": false,
+            "type": "text",
+            "isInput": true
         }
     ],
     "data": [],

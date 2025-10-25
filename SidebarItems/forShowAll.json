@@ -167,6 +167,12 @@
                 "DisplayName": "AsIs",
                 "IconClass": "bi bi-eye",
                 "SpanClass": "text-success"
+            },
+            {
+                "SubItemName": "sortWSAndPage",
+                "DisplayName": "WSAndPage",
+                "IconClass": "bi bi-eye",
+                "SpanClass": "text-success"
             }
         ]
     }

@@ -290,3 +290,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 
 - sort added in show all
 
+### 1.1.22
+
+- sort new added and delete fixed common config
+
