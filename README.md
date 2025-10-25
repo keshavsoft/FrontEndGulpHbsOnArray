@@ -286,3 +286,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 
 - UpdateBulkByPk in import started, update button and grid text need to be added
 
+### 1.1.21
+
+- sort added in show all
+

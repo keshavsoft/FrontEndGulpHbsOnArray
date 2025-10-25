@@ -154,5 +154,20 @@
                 "SpanClass": "text-success"
             }
         ]
+    },
+    {
+        "Name": "Sort",
+        "DisplayName": "Sort",
+        "IconClass": "bi bi-eye",
+        "SpanClass": "text-success",
+        "isCollapsable": true,
+        "SubItems": [
+            {
+                "SubItemName": "sortAsIs",
+                "DisplayName": "AsIs",
+                "IconClass": "bi bi-eye",
+                "SpanClass": "text-success"
+            }
+        ]
     }
 ]
