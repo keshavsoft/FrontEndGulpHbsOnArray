@@ -294,3 +294,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 
 - sort new added and delete fixed common config
 
+### 1.1.23
+
+- UI Delete AsIs 404 sweetalert
+

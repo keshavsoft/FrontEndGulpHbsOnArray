@@ -7,6 +7,16 @@ let StartFunc = async ({ inRowPk }) => {
     if (jVarLocalFetchResponse.status === 200) {
         StartFuncAfterFetch();
     };
+
+    if (jVarLocalFetchResponse.status === 404) {
+        Swal.fire({
+            title: "not Deleted!",
+            text: `The delete end point not found`,
+            icon: "error",
+            confirmButtonColor: "#3085d6",
+            confirmButtonText: "OK"
+        });
+    };
 };
 
 export { StartFunc }
