@@ -298,3 +298,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 
 - UI Delete AsIs 404 sweetalert
 
+### 1.1.24
+
+- UI Create footerWSAndDelete.html perfect with delete js need to be done
+

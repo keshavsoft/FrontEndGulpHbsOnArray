@@ -52,7 +52,27 @@
                     <table id="table" class="table table-bordered table-striped" data-show-footer="true"
                         data-toolbar="#toolbar">
                         <thead>
-                            {{> ForTable/Header/_Header}}
+                        <tr>
+                            <th data-field="KS-Serial" data-formatter="window.GlobalSerialFormatter">#</th>
+
+                            {{#each columns}}
+                            <th data-field="{{field}}"
+                                {{#if align}} data-align="{{align}}" {{/if}}
+                                    {{#if filterControl}}data-filter-control="{{filterControl}}" {{/if}}
+                                        {{#if align}}data-align="{{align}}" {{/if}}
+                                            {{#if showRupee}}data-formatter="window.RupeeFormatter" {{/if}}
+                                                {{#if (isVisible this)}} data-visible={{visible}}{{/if}}
+                                                    {{#if WidthOptions.inPx}} data-width="{{WidthOptions.inPx}}" {{/if}}
+                                                        {{#if defaultvalue}} data-defaultvalue="{{defaultvalue}}" {{/if}}     
+                                                            {{#if type}} data-type="{{type}}" {{/if}}     >
+
+                                {{title}}
+                            </th>
+                            {{/each}}
+                            <th data-field="KS-Save" data-formatter="window.GlobalDeleteFormatter">
+                                Options
+                            </th>
+                        </tr>
                         </thead>
                         <tfoot>
                             {{> ForTable/Footer/_TableFooter}}
@@ -74,9 +94,20 @@
             window.GlobalSerialFormatter = (value, row, index) => {
                 return index + 1;
             };
+
+
+            window.GlobalDeleteFormatter = (value, row, index) => {
+                return [
+                    `<a href="#" class="link btn" title="Delete">`,
+                    `<i class="bi bi-trash text-danger"></i>`,
+                    `</a>`
+
+                ].join('');
+            };
+
         </script>
 
-        <script type="module" src="../../Js/Create/FooterWS/entryFile.js"></script>
+        <script type="module" src="../../Js/Create/FooterWSAndDelete/entryFile.js"></script>
     </main>
 
 </body>
