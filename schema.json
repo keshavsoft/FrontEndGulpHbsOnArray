@@ -1,118 +1,46 @@
 {
-    "tableName": "StudentNames",
+    "tableName": "TasksTable",
     "columns": [
         {
-            "field": "StudentName",
-            "title": "StudentName",
-            "unique": false,
-            "type": "text",
-            "isInput": true
-        },
-        {
-            "field": "Mobile",
-            "title": "Mobile",
-            "unique": true,
-            "type": "number",
-            "isInput": true
-        },
-        {
-            "field": "email",
-            "title": "email",
+            "field": "title",
+            "title": "Title",
             "unique": true,
             "type": "text",
-            "isInput": true
+            "isInput": true,
+            "isAutoFocus": true,
+            "defaultvalue": "2nd"
         },
         {
-            "field": "CollegeName",
-            "title": "CollegeName",
+            "field": "start",
+            "title": "Start Date",
+            "unique": false,
+            "type": "date",
+            "isDate": true,
+            "WidthOptions": {
+                "inPx": 200
+            }
+        },
+        {
+            "field": "className",
+            "title": "Class Name",
             "unique": false,
             "type": "text",
             "isInput": false,
-            "isSelect": false,
-            "isDataList": true,
+            "isSelect": true,
+            "isDataList": false,
             "selectOptions": [
                 {
-                    "value": "ACE",
-                    "text": "ACE"
+                    "value": "bg-primary",
+                    "text": "bg-primary"
                 },
                 {
-                    "value": "CMR",
-                    "text": "CMR"
+                    "value": "bg-success",
+                    "text": "bg-success"
                 }
-            ]
-        },
-        {
-            "field": "Country",
-            "title": "Country",
-            "unique": false,
-            "type": "text",
-            "isInput": false,
-            "isSelect": false,
-            "isDataList": true,
-            "selectOptions": [
-                {
-                    "value": "India",
-                    "text": "India"
-                },
-                {
-                    "value": "Nepal",
-                    "text": "Nepal"
-                }
-            ]
-        },
-        {
-            "field": "EntranceRank",
-            "title": "EntranceRank",
-            "unique": false,
-            "type": "number",
-            "isInput": true
-        },
-        {
-            "field": "YearPassOut",
-            "title": "YearPassOut",
-            "unique": false,
-            "type": "text",
-            "isInput": false,
-            "isSelect": false,
-            "isDataList": true,
-            "selectOptions": [
-                {
-                    "value": "2025",
-                    "text": "2025"
-                },
-                {
-                    "value": "2024",
-                    "text": "2024"
-                }
-            ]
-        },
-        {
-            "field": "Back_logs",
-            "title": "Back-logs",
-            "unique": false,
-            "type": "number",
-            "isInput": true
-        },
-        {
-            "field": "RollNumber",
-            "title": "Roll Number",
-            "unique": false,
-            "type": "text",
-            "isInput": true
-        },
-        {
-            "field": "file",
-            "title": "file",
-            "unique": false,
-            "type": "file",
-            "isInput": true
-        },
-        {
-            "field": "GitLink",
-            "title": "GitLink",
-            "unique": false,
-            "type": "text",
-            "isInput": true
+            ],
+            "WidthOptions": {
+                "inPx": 250
+            }
         }
     ],
     "data": [],
