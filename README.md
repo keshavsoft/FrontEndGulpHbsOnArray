@@ -317,3 +317,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.28
 
 - FooterCreateWithDelete Js started
+
+### 1.1.29
+
+- FooterCreateWithDelete Js working...
