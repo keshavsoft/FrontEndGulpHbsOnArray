@@ -302,3 +302,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 
 - UI Create footerWSAndDelete.html perfect with delete js need to be done
 
+### 1.1.25
+
+- title started changing
+
