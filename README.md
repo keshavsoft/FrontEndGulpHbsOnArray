@@ -306,3 +306,6 @@ Instagram: <https://www.instagram.com/themesberg/>
 
 - title started changing
 
+### 1.1.26
+
+- index collapse Read
