@@ -115,9 +115,10 @@
                         <ul class="flex-column nav">
                             <li class="nav-item @@if (context.page === 'tables') { active }">
                                 <a class="nav-link" href="./ShowAll/asIs.html">
-                                    <span class="sidebar-text">Show All</span>
-                                </a>
+                                    <i class="bi bi-table"></i> <span class="sidebar-text">Show All</span>
+                                </a> 
                             </li>
+                            <!-- added icon and cards to read -->
                             <li class="nav-item">
                                 <a class="nav-link" href="./Charts/asIs.html">
                                     <span class="sidebar-icon text-info-emphasis">
@@ -126,6 +127,16 @@
                                     <span class="sidebar-text">Charts</span>
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a href="./Cards/asIs.html" class="nav-link d-flex justify-content-between">
+                                    <span>
+                                        <span class="sidebar-icon text-success-emphasis">
+                                            <i class="bi bi-wallet2"></i>
+                                        </span>
+                                        <span class="sidebar-text">Cards</span>
+                                    </span>
+                                </a>
+                             </li>
                         </ul>
                     </div>
                 </li>
@@ -152,16 +163,6 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="./Read/" class="nav-link d-flex justify-content-between">
-                        <span>
-                            <span class="sidebar-icon text-secondary">
-                                <i class="bi bi-eye"></i>
-                            </span>
-                            <span class="sidebar-text">Read</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a href="./Import/" class="nav-link d-flex justify-content-between">
                         <span>
                             <span class="sidebar-icon text-info">
@@ -178,36 +179,6 @@
                                 <i class="bi bi-columns-gap"></i>
                             </span>
                             <span class="sidebar-text">Protected</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="./ShowAll/asIs.html" class="nav-link d-flex justify-content-between">
-                        <span>
-                            <span class="sidebar-icon text-white">
-                                <i class="bi bi-eye"></i>
-                            </span>
-                            <span class="sidebar-text">ShowAll</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="./Cards/asIs.html" class="nav-link d-flex justify-content-between">
-                        <span>
-                            <span class="sidebar-icon text-success-emphasis">
-                                <i class="bi bi-wallet2"></i>
-                            </span>
-                            <span class="sidebar-text">Cards</span>
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="./Charts/asIs.html" class="nav-link d-flex justify-content-between">
-                        <span>
-                            <span class="sidebar-icon text-info-emphasis">
-                                <i class="bi bi-graph-up-arrow"></i>
-                            </span>
-                            <span class="sidebar-text">Charts</span>
                         </span>
                     </a>
                 </li>
