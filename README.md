@@ -313,3 +313,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.27
 
 - Create Menu footer and delete need to be tested...
+
+### 1.1.28
+
+- FooterCreateWithDelete Js started
