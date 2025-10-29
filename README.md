@@ -306,3 +306,10 @@ Instagram: <https://www.instagram.com/themesberg/>
 
 - title started changing
 
+### 1.1.26
+
+- index collapse Read
+
+### 1.1.27
+
+- Create Menu footer and delete need to be tested...
