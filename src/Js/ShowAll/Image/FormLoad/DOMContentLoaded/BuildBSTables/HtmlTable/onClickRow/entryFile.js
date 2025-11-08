@@ -1,12 +1,19 @@
-import { StartFunc as FetchDelete } from "./FetchDelete/entry.js";
+import UrlJson from "./url.json" with { type: "json" };
+import commonConfig from '../../../../../../../Config.json' with {type: 'json'};
 
-const StartFunc = async (row, $element, field) => {
+const StartFunc = (row, $element, field) => {
     if (field === "KS-Image") {
-
         if ("pk" in row) {
-            await FetchDelete({ inRowPk: row.pk });
-        }
-    }
+            let jVarTableName = commonConfig.TableName;
+
+            let LocalroutePath = UrlJson.DeleteUrl;
+            const jVarLocalRowPk = row.pk;
+
+            const jVarLocalUrl = `${jVarTableName}/${LocalroutePath}/${jVarLocalRowPk}`;
+
+            window.open(jVarLocalUrl, "_blank");
+        };
+    };
 };
 
 export { StartFunc };

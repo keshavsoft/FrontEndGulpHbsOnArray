@@ -325,3 +325,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.30
 
 - FooterCreateWithDelete Js perfect, and alert working...
+
+### 1.1.31
+
+- Image redirect perfect
