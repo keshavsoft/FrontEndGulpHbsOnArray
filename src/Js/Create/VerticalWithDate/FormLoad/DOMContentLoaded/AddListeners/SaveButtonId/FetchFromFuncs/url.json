@@ -1,4 +1,4 @@
 {
-    "PostUrl": "Insert/AsIsAndTS",
+    "PostUrl": "InsertWithChecks/ForUnique",
     "PostUrl_AsIs": "Insert/AsIs"
 }

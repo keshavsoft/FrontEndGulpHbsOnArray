@@ -52,6 +52,7 @@ const SideBarItemsforCards = require("./SidebarItems/forCards.json")
 const SideBarItemsforCharts = require("./SidebarItems/forCharts.json")
 const SideBarItemsforSubObjShow = require("./SidebarItems/forSubObjShow.json")
 const SideBarItemsforSubArrayShow = require("./SidebarItems/forSubArrayShow.json")
+const SideBarItemsforCreateWithChecks = require("./SidebarItems/forCreateWithChecks.json");
 
 // Define paths
 const paths = {
@@ -124,7 +125,8 @@ var templateData = {
     SideBarItemsforCharts: SideBarItemsforCharts,
     SideBarItemsForGroupBy: SideBarItemsForGroupBy,
     SideBarItemsforSubObjShow: SideBarItemsforSubObjShow,
-    SideBarItemsforSubArrayShow: SideBarItemsforSubArrayShow
+    SideBarItemsforSubArrayShow: SideBarItemsforSubArrayShow,
+    SideBarItemsforCreateWithChecks: SideBarItemsforCreateWithChecks
 };
 
 options = {
