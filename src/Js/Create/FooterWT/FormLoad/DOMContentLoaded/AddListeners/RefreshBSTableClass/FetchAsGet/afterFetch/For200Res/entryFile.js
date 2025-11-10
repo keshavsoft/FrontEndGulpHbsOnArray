@@ -1,4 +1,4 @@
-import { StartFunc as ForTotals } from "../ForTotals/entryFile.js";
+// import { StartFunc as ForTotals } from "../ForTotals/entryFile.js";
 
 let StartFunc = ({ inResponseAsJson }) => {
     var $table = $('#table');
