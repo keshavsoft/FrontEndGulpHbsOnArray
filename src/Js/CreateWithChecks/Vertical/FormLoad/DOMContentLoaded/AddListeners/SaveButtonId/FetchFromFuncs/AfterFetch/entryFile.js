@@ -14,6 +14,10 @@ let StartFunc = async ({ inResponse }) => {
         let jVarLocalSavedPk = await jVarLocalResponse.text();
         Status500({ inResponse: jVarLocalSavedPk });
     };
+    if (jVarLocalResponse.status === 409) {
+        let jVarLocalSavedPk = await jVarLocalResponse.text();
+        Status500({ inResponse: jVarLocalSavedPk });
+    };
 };
 
 export { StartFunc }

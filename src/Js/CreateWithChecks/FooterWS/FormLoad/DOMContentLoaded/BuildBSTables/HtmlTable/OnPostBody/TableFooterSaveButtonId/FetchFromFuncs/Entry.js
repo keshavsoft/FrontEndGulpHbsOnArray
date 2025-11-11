@@ -1,12 +1,9 @@
 import { StartFunc as StartFuncFetchFuncs } from "./PostFetch.js";
-import { StartFunc as StartFuncAfterFetch } from "./AfterFetch/EntryFile.js";
+import { StartFunc as StartFuncAfterFetch } from "./AfterFetch/entryFile.js";
 
 let StartFunc = async ({ inCurrentTarget }) => {
     let jVarLocalDataNeeded = await StartFuncFetchFuncs({ inCurrentTarget });
-
-    if (jVarLocalDataNeeded.status === 200) {
-        StartFuncAfterFetch();
-    };
+    StartFuncAfterFetch({ inResponse: jVarLocalDataNeeded });
 };
 
 export { StartFunc }
