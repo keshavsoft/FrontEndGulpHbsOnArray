@@ -57,12 +57,6 @@
         "SpanClass": "text-danger"
     },
     {
-        "Name": "footerWSAndDelete",
-        "DisplayName": "footerWSAndDelete",
-        "IconClass": "bi bi-pen",
-        "SpanClass": "text-danger"
-    },
-    {
         "Name": "footer",
         "DisplayName": "Footer",
         "IconClass": "bi bi-pencil-square",
