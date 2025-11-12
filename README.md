@@ -329,3 +329,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.31
 
 - Image redirect perfect
+
+### 1.1.32
+
+- secured redirect fixed
