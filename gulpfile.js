@@ -523,7 +523,7 @@ gulp.task("end:dist", async () => {
 gulp.task("end:distForProtected:dist", async () => {
     fse.copySync(`${paths.src.base}/Js`, `${paths.distForProtected.base}/Js`);
 
-    LocalFuncChangeJsConfigForProtected({ inDistPath: paths.distForProtected.base });
+    LocalFuncChangeJsConfig({ inDistPath: paths.distForProtected.base });
 
     return await true;
 });

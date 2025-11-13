@@ -333,3 +333,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.32
 
 - secured redirect fixed
+
+### 1.1.33
+
+- gulpfile function changed
