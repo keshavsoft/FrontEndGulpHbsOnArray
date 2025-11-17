@@ -52,7 +52,6 @@
     },
     "SubRoutes": [
         "Read",
-        "Insert",
-        "Delete"
+        "Insert"
     ]
 }

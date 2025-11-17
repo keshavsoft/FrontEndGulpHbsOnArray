@@ -45,6 +45,12 @@
         "SpanClass": "text-danger"
     },
     {
+        "Name": "verticalAlert",
+        "DisplayName": "verticalAlert",
+        "IconClass": "bi bi-pen",
+        "SpanClass": "text-danger"
+    },
+    {
         "Name": "verticalWithDate",
         "DisplayName": "verticalWithDate",
         "IconClass": "bi bi-pen",
