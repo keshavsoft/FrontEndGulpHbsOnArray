@@ -4,16 +4,20 @@ let StartFunc = () => {
     // Select all inputs with "required" attribute
     let requiredInputs = jVarLocalForm.querySelectorAll("input[required], select[required], textarea[required]");
 
+    let isValid = true;
+
     for (let input of requiredInputs) {
         if (!input.value.trim()) {
-            // Highlight the input (optional)
-            input.style.border = "1px solid red";
-
-            return false; // stop here → form validation failed
+            input.classList.add("is-invalid");   // Bootstrap invalid class
+            input.classList.remove("is-valid");
+            isValid = false;
+        } else {
+            input.classList.add("is-valid");     // Bootstrap valid class
+            input.classList.remove("is-invalid");
         }
     }
 
-    return true; // all required fields are filled
+    return isValid;  // true = all good, false = some empty
 };
 
 export { StartFunc };
