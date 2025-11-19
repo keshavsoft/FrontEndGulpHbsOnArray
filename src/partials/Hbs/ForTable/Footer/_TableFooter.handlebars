@@ -56,6 +56,8 @@
         <input class="form-control" id="HtmlId-{{field}}" name="{{field}}" list="HtmlDLEId-{{field}}" />
         <datalist id="HtmlDLEId-{{field}}"></datalist>
         {{/if}}
+       <div class="invalid-feedback">{{errorMessage}}</div>
+
     </th>
 
     {{/each}}
