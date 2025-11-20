@@ -337,3 +337,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.33
 
 - gulpfile function changed
+
+### 1.1.34
+
+- ShowAllSortDesc started...
