@@ -349,3 +349,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.36
 
 - ShowAllSortDesc image time stamp added
+
+### 1.1.37
+
+- Delete Ui used extension for afterfetch
