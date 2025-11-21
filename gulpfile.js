@@ -53,7 +53,7 @@ const SideBarItemsforCharts = require("./SidebarItems/forCharts.json")
 const SideBarItemsforSubObjShow = require("./SidebarItems/forSubObjShow.json")
 const SideBarItemsforSubArrayShow = require("./SidebarItems/forSubArrayShow.json")
 const SideBarItemsforCreateWithChecks = require("./SidebarItems/forCreateWithChecks.json");
-
+const SideBarItemsForShowAllSortDesc = require("./SidebarItems/forShowAllSortDesc.json");
 // Define paths
 const paths = {
     distForProtected: {
@@ -126,7 +126,8 @@ var templateData = {
     SideBarItemsForGroupBy: SideBarItemsForGroupBy,
     SideBarItemsforSubObjShow: SideBarItemsforSubObjShow,
     SideBarItemsforSubArrayShow: SideBarItemsforSubArrayShow,
-    SideBarItemsforCreateWithChecks: SideBarItemsforCreateWithChecks
+    SideBarItemsforCreateWithChecks: SideBarItemsforCreateWithChecks,
+    SideBarItemsForShowAllSortDesc: SideBarItemsForShowAllSortDesc
 };
 
 options = {

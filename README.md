@@ -341,3 +341,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.34
 
 - ShowAllSortDesc started...
+
+### 1.1.35
+
+- ShowAllSortDesc sidebar changed

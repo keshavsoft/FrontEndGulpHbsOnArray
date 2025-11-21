@@ -1,46 +1,125 @@
 {
-    "tableName": "TasksTable",
+    "tableName": "StudentNames",
     "columns": [
         {
-            "field": "title",
-            "title": "Title",
+            "field": "StudentName",
+            "title": "StudentName",
+            "unique": false,
+            "type": "text",
+            "isInput": true
+        },
+        {
+            "field": "Mobile",
+            "title": "Mobile",
+            "unique": true,
+            "type": "number",
+            "isInput": true
+        },
+        {
+            "field": "Email",
+            "title": "Email",
             "unique": true,
             "type": "text",
-            "isInput": true,
-            "isAutoFocus": true,
-            "defaultvalue": "2nd"
+            "isInput": true
         },
         {
-            "field": "start",
-            "title": "Start Date",
-            "unique": false,
-            "type": "date",
-            "isDate": true,
-            "WidthOptions": {
-                "inPx": 200
-            }
-        },
-        {
-            "field": "className",
-            "title": "Class Name",
+            "field": "CollegeName",
+            "title": "CollegeName",
             "unique": false,
             "type": "text",
             "isInput": false,
-            "isSelect": true,
-            "isDataList": false,
+            "isSelect": false,
+            "isDataList": true,
             "selectOptions": [
                 {
-                    "value": "bg-primary",
-                    "text": "bg-primary"
+                    "value": "ACE",
+                    "text": "ACE"
                 },
                 {
-                    "value": "bg-success",
-                    "text": "bg-success"
+                    "value": "CMR",
+                    "text": "CMR"
                 }
-            ],
-            "WidthOptions": {
-                "inPx": 250
-            }
+            ]
+        },
+        {
+            "field": "Country",
+            "title": "Country",
+            "unique": false,
+            "type": "text",
+            "isInput": false,
+            "isSelect": false,
+            "isDataList": true,
+            "selectOptions": [
+                {
+                    "value": "India",
+                    "text": "India"
+                },
+                {
+                    "value": "Nepal",
+                    "text": "Nepal"
+                }
+            ]
+        },
+        {
+            "field": "EntranceRank",
+            "title": "EntranceRank",
+            "unique": false,
+            "type": "number",
+            "isInput": true
+        },
+        {
+            "field": "YearPassOut",
+            "title": "YearPassOut",
+            "unique": false,
+            "type": "text",
+            "isInput": false,
+            "isSelect": false,
+            "isDataList": true,
+            "selectOptions": [
+                {
+                    "value": "2025",
+                    "text": "2025"
+                },
+                {
+                    "value": "2024",
+                    "text": "2024"
+                }
+            ]
+        },
+        {
+            "field": "Back_logs",
+            "title": "Back-logs",
+            "unique": false,
+            "type": "number",
+            "isInput": true
+        },
+        {
+            "field": "RollNumber",
+            "title": "Roll Number",
+            "unique": false,
+            "type": "text",
+            "isInput": true
+        },
+        {
+            "field": "file",
+            "title": "file",
+            "unique": false,
+            "type": "file",
+            "isInput": true
+        },
+        {
+            "field": "GitLink",
+            "title": "GitLink",
+            "unique": false,
+            "type": "text",
+            "isInput": true
+        },
+        {
+            "field": "Intern2025",
+            "title": "Intern2025",
+            "unique": false,
+            "type": "text",
+            "isInput": true
         }
     ],
     "data": [],
@@ -52,6 +131,12 @@
     },
     "SubRoutes": [
         "Read",
-        "Insert"
+        "Insert",
+        "Delete",
+        "Image",
+        "Mail",
+        "InsertWithChecks",
+        "Sort",
+        "GroupBy"
     ]
 }
