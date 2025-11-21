@@ -14,6 +14,10 @@ const StartFunc = (row, $element, field) => {
             window.open(jVarLocalUrl, "_blank");
         };
     };
+
+    if (field === "KS-Clipboard") {
+        navigator.clipboard.writeText(row.Mobile).then();
+    };
 };
 
 export { StartFunc };

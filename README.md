@@ -353,3 +353,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.37
 
 - Delete Ui used extension for afterfetch
+
+### 1.1.38
+
+- Image clipboard started...
