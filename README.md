@@ -345,3 +345,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.35
 
 - ShowAllSortDesc sidebar changed
+
+### 1.1.36
+
+- ShowAllSortDesc image time stamp added
