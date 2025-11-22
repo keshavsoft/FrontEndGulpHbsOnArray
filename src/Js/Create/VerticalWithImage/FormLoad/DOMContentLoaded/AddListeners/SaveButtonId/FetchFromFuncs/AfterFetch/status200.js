@@ -1,19 +1,15 @@
-import UrlJson from './url.json' with { type: 'json' };
-
 const StartFunc = ({ inRowPk }) => {
-    window.location.href = `${UrlJson.RedirectToUrl}?inRowPk=${inRowPk}`;
+    LocalFuncForAlert({ inRowPk });
 };
 
-const LocalFuncForSingleTable = ({ inRowPk }) => {
-    if (window.location.pathname.endsWith(`/${UrlJson.PresentUrl}`)) {
-        window.location.href = `${UrlJson.RedirectToUrl}?inRowPk=${inRowPk}`;
-        return true;
-    }
-    return false;
-};
-
-const LocalFuncForAllTables = ({ inRowPk }) => {
-    window.location.href = `${UrlJson.RedirectToUrl}?inRowPk=${inRowPk}`;
+const LocalFuncForAlert = ({ inRowPk }) => {
+    Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Your record has been saved",
+        showConfirmButton: false,
+        timer: 1500
+    });
 };
 
 export { StartFunc };
