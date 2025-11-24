@@ -1,5 +1,9 @@
 import { StartFunc as FetchDelete } from "./FetchDelete/entry.js";
+import { StartFunc as StartFuncNav } from "./NavAlter/entryFile.js";
+import { StartFunc as StartFuncRowDataFromGet } from "./RowDataFromGet/Entry.js";
+
 const jVarCommonFieldName = "KS-Delete";
+const jVarCommonFieldAlterName = "KS-Alter";
 
 const StartFunc = async (row, $element, field) => {
     if (field === jVarCommonFieldName) {
@@ -29,6 +33,18 @@ const StartFunc = async (row, $element, field) => {
             }
         }
     }
+
+    if (field === jVarCommonFieldAlterName) {
+        const myModal = new bootstrap.Modal('#AlterModal', {
+            backdrop: 'static',   // prevent close on outside click
+            keyboard: false       // prevent close on ESC
+        });
+
+        myModal.show();
+        StartFuncRowDataFromGet({ inGetKey: row.pk });
+
+        // StartFuncNav({ inRowpk: row.pk });
+    };
 };
 
 export { StartFunc };
