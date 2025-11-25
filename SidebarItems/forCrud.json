@@ -13,20 +13,20 @@
     },
     {
         "Name": "createAndDelete",
-        "DisplayName": "CreateAndDelete",
-        "IconClass": "bi bi-pen",
+        "DisplayName": "CreateAndDel",
+        "IconClass": "bi bi-plus",
         "SpanClass": "text-danger"
     },
     {
         "Name": "createAndAlter",
-        "DisplayName": "CreateAndAlter",
-        "IconClass": "bi bi-pen",
-        "SpanClass": "text-danger"
+        "DisplayName": "CreateAndAlt",
+        "IconClass": "bi bi-plus-circle",
+        "SpanClass": "text-info"
     },
     {
         "Name": "createDeleteAndAlter",
-        "DisplayName": "CreateDeleteAndAlter",
-        "IconClass": "bi bi-pen",
-        "SpanClass": "text-danger"
+        "DisplayName": "CreateDelAndAlt",
+        "IconClass": "bi bi-person-plus",
+        "SpanClass": "text-warning"
     }
 ]
