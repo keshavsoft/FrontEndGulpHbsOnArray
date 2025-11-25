@@ -31,8 +31,8 @@
                 "SpanClass": "text-success"
             },
             {
-                "SubItemName": "footerDL",
-                "DisplayName": "footerDL",
+                "SubItemName": "crud",
+                "DisplayName": "crud",
                 "IconClass": "bi bi-eye",
                 "SpanClass": "text-success"
             }
