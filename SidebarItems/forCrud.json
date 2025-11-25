@@ -1,0 +1,32 @@
+[
+    {
+        "Name": "index",
+        "DisplayName": "DashBoard",
+        "IconClass": "bi bi-speedometer2",
+        "SpanClass": "text-danger"
+    },
+    {
+        "Name": "crateOnly",
+        "DisplayName": "CrateOnly",
+        "IconClass": "bi bi-pencil-square",
+        "SpanClass": "text-success"
+    },
+    {
+        "Name": "createAndDelete",
+        "DisplayName": "CreateAndDelete",
+        "IconClass": "bi bi-pen",
+        "SpanClass": "text-danger"
+    },
+    {
+        "Name": "createAndAlter",
+        "DisplayName": "CreateAndAlter",
+        "IconClass": "bi bi-pen",
+        "SpanClass": "text-danger"
+    },
+    {
+        "Name": "createDeleteAndAlter",
+        "DisplayName": "CreateDeleteAndAlter",
+        "IconClass": "bi bi-pen",
+        "SpanClass": "text-danger"
+    }
+]
