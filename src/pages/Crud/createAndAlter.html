@@ -19,18 +19,18 @@
 <html lang="en">
 
 <head>
-    {{> _head path="../.." title="CreateDelAndAlt"}}
+    {{> _head path="../.." title="CreateAndAlt"}}
 </head>
 
 <body>
     {{> _nav path="../.."}}
 
-    {{> SideNavs/crud path="../.." currentPage="createDeleteAndAlter" currentPageGroup="createDeleteAndAlter"}}
+    {{> SideNavs/crud path="../.." currentPage="createAndAlter" currentPageGroup="createAndAlter"}}
 
     <main class="content">
         {{> _topbar path="../.."}}
 
-        {{> _breadCrumb path="../.." page="CreateDelAndAlt"}}
+        {{> _breadCrumb path="../.." page="CreateAndAlt"}}
 
         <div id="toolbar">
             <a id="RefreshATagId" href="#"
@@ -71,9 +71,7 @@
                                     {{title}}
                                 </th>
                                 {{/each}}
-                                <th data-field="KS-Delete" data-formatter="window.GlobalDeleteFormatter">
-                                    Options
-                                </th>
+                        
                                 <th data-field="KS-Alter" data-formatter="window.GlobalAlterFormatter">Options</th>
 
                             </tr>
@@ -128,15 +126,6 @@
                 return index + 1;
             };
 
-
-            window.GlobalDeleteFormatter = (value, row, index) => {
-                return [
-                    `<a href="#" class="link btn" title="Delete">`,
-                    `<i class="bi bi-trash text-danger"></i>`,
-                    `</a>`
-
-                ].join('');
-            };
             window.GlobalAlterFormatter = (value, row, index) => {
                 return [
                     `<a href="#" class="link btn" title="Edit" data-bs-toggle="modal" data-bs-target="#AlterModal">`,
@@ -148,7 +137,7 @@
 
         </script>
 
-        <script type="module" src="../../Js/Crud/CreateDeleteAndAlter/entryFile.js"></script>
+        <script type="module" src="../../Js/Crud/CreateAndAlter/entryFile.js"></script>
     </main>
 
 </body>
