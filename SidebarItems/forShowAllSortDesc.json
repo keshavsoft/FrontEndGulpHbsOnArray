@@ -158,6 +158,12 @@
                 "DisplayName": "imagePage",
                 "IconClass": "bi bi-image",
                 "SpanClass": "text-success"
+            },
+            {
+                "SubItemName": "imagePageSms",
+                "DisplayName": "imagePageSms",
+                "IconClass": "bi bi-image",
+                "SpanClass": "text-success"
             }
         ]
     },

@@ -357,3 +357,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.38
 
 - Image clipboard started...
+
+### 1.1.30
+
+- imagePageSms started
