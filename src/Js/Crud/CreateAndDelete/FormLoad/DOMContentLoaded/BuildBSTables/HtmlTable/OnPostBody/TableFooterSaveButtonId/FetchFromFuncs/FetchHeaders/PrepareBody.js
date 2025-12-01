@@ -1,7 +1,7 @@
 const StartFunc = ({ inCurrentTarget }) => {
     const jVarLocalCurrentTarget = inCurrentTarget;
     const jVarLocalClosestTr = jVarLocalCurrentTarget.closest("tr");
-    const jVarLocalInputs = jVarLocalClosestTr.querySelectorAll("input");
+    const jVarLocalInputs = jVarLocalClosestTr.querySelectorAll("input,textarea,select");
 
     let jVarLocalPostObject = jFLocalPreparePostBody({ inQuerySelectorAll: jVarLocalInputs });
 
