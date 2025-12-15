@@ -291,6 +291,37 @@
                         </span>
                     </a>
                 </li>
+
+                <li class="nav-item">
+                    <span class="nav-link d-flex justify-content-between align-items-center collapsed"
+                        data-bs-toggle="collapse" data-bs-target="#BackUp-app">
+                        <span>
+                            <span class="sidebar-icon">
+                                <i class="bi bi-eye"></i>
+                            </span>
+                            <span class="sidebar-text">BackUp</span>
+                        </span>
+                        <span class="link-arrow">
+                            <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                    </span>
+
+                    <div class="multi-level collapse" role="list" id="BackUp-app" aria-expanded="false">
+                        <ul class="flex-column nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Utility/BackUp/Complete">
+                                    <i class="bi bi-table"></i> <span class="sidebar-text">Complete</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
             </ul>
         </div>
     </nav>
@@ -301,7 +332,7 @@
         {{> _footer path=".."}}
     </main>
 
-    {{> Scripts/_scripts}}
+    {{> Scripts/_scriptsEmpty}}
 </body>
 
 </html>

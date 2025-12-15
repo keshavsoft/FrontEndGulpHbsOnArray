@@ -361,3 +361,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.30
 
 - imagePageSms started
+
+### 1.1.40
+
+- Backup added in menu
