@@ -3,7 +3,7 @@ import KeysJson from './keys.json' with { type: 'json' };
 let StartFunc = () => {
     const jVarLocalBodyData = {};
     jVarLocalBodyData.UserName = jFLocalUserNameId();
-    jVarLocalBodyData.Password = parseInt(jFLocalPasswordId());
+    jVarLocalBodyData.Password = jFLocalPasswordId();
 
     KeysJson.body = JSON.stringify(jVarLocalBodyData);
 

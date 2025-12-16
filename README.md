@@ -365,3 +365,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.40
 
 - Backup added in menu
+
+### 1.1.41
+
+- password removed ind
