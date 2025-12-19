@@ -369,3 +369,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.41
 
 - password removed ind
+
+### 1.1.42
+
+- Delete asis case fixed
