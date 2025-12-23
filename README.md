@@ -373,3 +373,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.42
 
 - Delete asis case fixed
+
+### 1.1.43
+
+- MultiTable Index just started

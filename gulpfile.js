@@ -29,33 +29,14 @@ var rename = require('gulp-rename');
 
 const fse = require("fs-extra");
 const { options: optionsObject } = require("./options");
+const { StartFunc: StartFuncFromForTemplateData } = require("./GulpCode/ForTemplateData/entryFile");
 
 var dotenv = require("dotenv");
 dotenv.config();
 
 // Load and enhance schema.json
 const CommonColumns = require("./schema.json");
-const SideBarItems = require("./SidebarItems/SideBar.json");
-const SideBarForCalender = require("./SidebarItems/forCalender.json");
-// const CommonSideBarsImportJson = require("./SideBars/import.json");
 
-const CommonSideBarsImportJson = require("./SidebarItems/forImport.json");
-
-const SideBarItemsForShowAll = require("./SidebarItems/forShowAll.json");
-const SideBarForRead = require("./SidebarItems/forRead.json")
-const SideBarItemsforCreate = require("./SidebarItems/forCreate.json");
-const SideBarItemsforDelete = require("./SidebarItems/forDelete.json");
-const SideBarItemsForGroupBy = require("./SidebarItems/forGroupBy.json")
-const SideBarItemsforAlter = require("./SidebarItems/forAlter.json")
-const SideBarItemsforDownload = require("./SidebarItems/forDownload.json")
-const SideBarItemsforCards = require("./SidebarItems/forCards.json")
-const SideBarItemsforCharts = require("./SidebarItems/forCharts.json")
-const SideBarItemsforSubObjShow = require("./SidebarItems/forSubObjShow.json")
-const SideBarItemsforSubArrayShow = require("./SidebarItems/forSubArrayShow.json")
-const SideBarItemsforCreateWithChecks = require("./SidebarItems/forCreateWithChecks.json");
-const SideBarItemsForShowAllSortDesc = require("./SidebarItems/forShowAllSortDesc.json");
-const SideBarItemsForCrud = require("./SidebarItems/forCrud.json");
-const SideBarItemsForCrudWithCheck = require("./SidebarItems/forCrudWithCheck.json");
 // Define paths
 const paths = {
     distForProtected: {
@@ -106,33 +87,36 @@ const paths = {
     },
 };
 
-var templateData = {
-    TableName: CommonColumns.tableName,
-    firstName: 'KeshavSoft',
-    Array: [{ name: "create" }, { name: "show" }, { name: "KeshavSoft" }],
-    SideBarItems: SideBarItems,
-    SideBarForCalender: SideBarForCalender,
-    TableColumns: CommonColumns.columns,
-    columns: CommonColumns.columns,
-    DataTableOptions: CommonColumns.DataTableOptions,
-    SideBarForImport: CommonSideBarsImportJson,
-    pathFromGulp: "../..",
-    SideBarItemsForShowAll: SideBarItemsForShowAll,
-    SideBarForRead: SideBarForRead,
-    SideBarItemsforCreate: SideBarItemsforCreate,
-    SideBarItemsforDelete: SideBarItemsforDelete,
-    SideBarItemsforAlter: SideBarItemsforAlter,
-    SideBarItemsforDownload: SideBarItemsforDownload,
-    SideBarItemsforCards: SideBarItemsforCards,
-    SideBarItemsforCharts: SideBarItemsforCharts,
-    SideBarItemsForGroupBy: SideBarItemsForGroupBy,
-    SideBarItemsforSubObjShow: SideBarItemsforSubObjShow,
-    SideBarItemsforSubArrayShow: SideBarItemsforSubArrayShow,
-    SideBarItemsforCreateWithChecks: SideBarItemsforCreateWithChecks,
-    SideBarItemsForShowAllSortDesc: SideBarItemsForShowAllSortDesc,
-    SideBarItemsForCrud: SideBarItemsForCrud,
-    SideBarItemsForCrudWithCheck: SideBarItemsForCrudWithCheck
-};
+// var templateData = {
+//     TableName: CommonColumns.tableName,
+//     firstName: 'KeshavSoft',
+//     Array: [{ name: "create" }, { name: "show" }, { name: "KeshavSoft" }],
+//     SideBarItems: SideBarItems,
+//     SideBarForCalender: SideBarForCalender,
+//     TableColumns: CommonColumns.columns,
+//     columns: CommonColumns.columns,
+//     DataTableOptions: CommonColumns.DataTableOptions,
+//     SideBarForImport: CommonSideBarsImportJson,
+//     pathFromGulp: "../..",
+//     SideBarItemsForShowAll: SideBarItemsForShowAll,
+//     SideBarForRead: SideBarForRead,
+//     SideBarItemsforCreate: SideBarItemsforCreate,
+//     SideBarItemsforDelete: SideBarItemsforDelete,
+//     SideBarItemsforAlter: SideBarItemsforAlter,
+//     SideBarItemsforDownload: SideBarItemsforDownload,
+//     SideBarItemsforCards: SideBarItemsforCards,
+//     SideBarItemsforCharts: SideBarItemsforCharts,
+//     SideBarItemsForGroupBy: SideBarItemsForGroupBy,
+//     SideBarItemsforSubObjShow: SideBarItemsforSubObjShow,
+//     SideBarItemsforSubArrayShow: SideBarItemsforSubArrayShow,
+//     SideBarItemsforCreateWithChecks: SideBarItemsforCreateWithChecks,
+//     SideBarItemsForShowAllSortDesc: SideBarItemsForShowAllSortDesc,
+//     SideBarItemsForCrud: SideBarItemsForCrud,
+//     SideBarItemsForCrudWithCheck: SideBarItemsForCrudWithCheck
+// };
+
+
+var templateData = StartFuncFromForTemplateData({ inCommonColumns: CommonColumns });
 
 options = {
     ignorePartials: true, //ignores the unknown footer2 partial in the handlebars template, defaults to false
