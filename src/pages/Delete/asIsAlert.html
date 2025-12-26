@@ -19,18 +19,18 @@
 <html lang="en">
 
 <head>
-    {{> _head path="../.." title="DeleteAll"}}
+    {{> _head path="../.." title="Delete"}}
 </head>
 
 <body>
     {{> _nav path="../.."}}
 
-    {{> SideNavs/delete path="../.." currentPage="asIs" currentPageGroup="DeleteAll"}}
+    {{> SideNavs/delete path="../.." currentPage="asIsAlert" currentPageGroup="DeleteAll"}}
 
     <main class="content">
         {{> _topbar path="../.."}}
 
-        {{> _breadCrumb path="../.." page="AsIs"}}
+        {{> _breadCrumb path="../.." page="asIsAlert"}}
 
         <div id="toolbar">
             <a id="RefreshATagId" href="#"
@@ -94,7 +94,7 @@
             };
         </script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script type="module" src="../../Js/Delete/AsIs/entryFile.js"></script>
+        <script type="module" src="../../Js/Delete/AsIsAlert/entryFile.js"></script>
     </main>
 
 </body>
