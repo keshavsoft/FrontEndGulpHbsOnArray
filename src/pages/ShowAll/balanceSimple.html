@@ -74,15 +74,13 @@
                 const LocalMinusValue = data
                     .map(row => +row[jVarLocalMinus])
                     .reduce((sum, i) => sum + i, 0);
-                // console.log("aaaaaaaaaaaaa : ", k1, k2, this.minus, LocalReturnValue - LocalMinusValue);
-
 
                 if (LocalReturnValue > LocalMinusValue) {
                     return `<div class="row">
             <div class="col">₹ ${LocalReturnValue.toFixed(2)}</div>
         </div>
         <div class="row">
-            <div class="col">₹ ${LocalReturnValue - LocalMinusValue.toFixed(2)}</div>
+            <div class="col">₹ ${(LocalReturnValue - LocalMinusValue).toFixed(2)}</div>
         </div>`;
                 } else {
                     return `<div class="row">
@@ -90,11 +88,8 @@
         </div> <div class="row">
             <div class="col">-</div>
         </div>`;
-
                 };
-
             };
-
 
             window.GlobalSerialFormatter = (value, row, index) => {
                 return index + 1;

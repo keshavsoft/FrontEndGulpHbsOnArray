@@ -377,3 +377,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.43
 
 - MultiTable Index just started
+
+### 1.1.44
+
+- balanceSimple total balance perfect
