@@ -28,7 +28,7 @@
     {{> SideNavs/crudWithCheck path="../.." currentPage="crateOnly" currentPageGroup="crateOnly"}}
 
     <main class="content">
-        {{> _topbar path="../.."}}
+        {{> _topbarWithSignOut path="../.."}}
 
         {{> _breadCrumb path="../.." page="CrateOnly"}}
 
@@ -101,6 +101,7 @@
         </script>
 
         <script type="module" src="../../Js/CrudWithCheck/CrateOnly/entryFile.js"></script>
+        <script type="module" src="../../Js/CommonJs/entryFile.js"></script>
     </main>
 
 </body>

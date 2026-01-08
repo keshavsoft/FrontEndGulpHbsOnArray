@@ -4,4 +4,4 @@ let StartFunc = () => {
   StartFuncFromTopBarLogoutId();
 };
 
-StartFunc();
+export { StartFunc }

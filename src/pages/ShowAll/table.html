@@ -28,7 +28,7 @@
     {{> SideNavs/showAll path="../.." currentPage="table" currentPageGroup="table"}}
 
     <main class="content">
-        {{> _topbar path="../.."}}
+        {{> _topbarWithSignOut path="../.."}}
 
         <div id="toolbar">
             <a id="RefreshATagId" href="#"
@@ -44,7 +44,7 @@
             </a>
         </div>
 
-            <div class="card border-0 shadow">
+        <div class="card border-0 shadow">
             <div class="card-header">
                 <div class="row align-items-center">
                     <div class="col">
@@ -94,6 +94,8 @@
         {{> Scripts/_ForTableOnly path="../.."}}
 
         <script type="module" src="../../Js/ShowAll/Table/entryFile.js"></script>
+        <script type="module" src="../../Js/CommonJs/entryFile.js"></script>
+
     </main>
 
 </body>
