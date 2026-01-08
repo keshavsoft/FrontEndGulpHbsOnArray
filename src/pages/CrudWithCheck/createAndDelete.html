@@ -28,7 +28,7 @@
     {{> SideNavs/crudWithCheck path="../.." currentPage="createAndDelete" currentPageGroup="createAndDelete"}}
 
     <main class="content">
-        {{> _topbar path="../.."}}
+        {{> _topbarWithSignOut path="../.."}}
 
         {{> _breadCrumb path="../.." page="CreateAndDel"}}
 
@@ -77,7 +77,7 @@
 
                             </tr>
                         </thead>
-                       
+
                         <tfoot>
                             {{> ForTable/Footer/_TableFooter}}
                         </tfoot>
@@ -112,6 +112,8 @@
         </script>
 
         <script type="module" src="../../Js/CrudWithCheck/CreateAndDelete/entryFile.js"></script>
+        <script type="module" src="../../Js/CommonJs/entryFile.js"></script>
+
     </main>
 
 </body>

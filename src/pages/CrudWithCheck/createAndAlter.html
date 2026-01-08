@@ -28,7 +28,7 @@
     {{> SideNavs/crudWithCheck path="../.." currentPage="createAndAlter" currentPageGroup="createAndAlter"}}
 
     <main class="content">
-        {{> _topbar path="../.."}}
+        {{> _topbarWithSignOut path="../.."}}
 
         {{> _breadCrumb path="../.." page="CreateAndAlt"}}
 
@@ -71,7 +71,7 @@
                                     {{title}}
                                 </th>
                                 {{/each}}
-                        
+
                                 <th data-field="KS-Alter" data-formatter="window.GlobalAlterFormatter">Alter</th>
 
                             </tr>
@@ -138,6 +138,8 @@
         </script>
 
         <script type="module" src="../../Js/CrudWithCheck/CreateAndAlter/entryFile.js"></script>
+        <script type="module" src="../../Js/CommonJs/entryFile.js"></script>
+
     </main>
 
 </body>
