@@ -6,10 +6,10 @@ let StartFunc = async ({ inResponse }) => {
     // console.log("status : ", jVarLocalResponse);
 
     if (jVarLocalResponse.status === 200) {
-        let jVarLocalSavedPk = await jVarLocalResponse.text();
+        let jVarLocalRes = await jVarLocalResponse.json();
         // console.log("------- : ", jVarLocalSavedPk);
 
-        Status200({ inUserName: jVarLocalSavedPk });
+        Status200({ inRes: jVarLocalRes });
     };
 
     // if (jVarLocalResponse.status === 500) {

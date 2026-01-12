@@ -1,8 +1,9 @@
 // import UrlJson from './url.json' with { type: 'json' };
 
-const StartFunc = ({ inUserName }) => {
+const StartFunc = ({ inRes }) => {
     // console.log("-------inRowPk : ", inRowPk);
-    localStorage.setItem("UserName", inUserName);
+    localStorage.setItem("UserName", inRes.UserName);
+    localStorage.setItem("Image", inRes.Image);
     jFLocalAddUrlParams();
 };
 

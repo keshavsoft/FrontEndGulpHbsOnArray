@@ -29,7 +29,7 @@
 
 
     <main class="content">
-        {{> _topbar path="../.."}}
+        {{> _topbarWithSignOut path="../.."}}
 
         {{> _breadCrumb path="../.." page="diff"}}
 
@@ -76,7 +76,7 @@
         {{> _footer path="../.."}}
 
         {{> Scripts/_scripts}}
-        
+
         <script>
             window.GlobalSerialFormatter = (value, row, index) => {
                 return index + 1;
@@ -95,7 +95,7 @@
             };
         </script>
         </script>
-
+        <script type="module" src="../../Js/CommonJs/entryFile.js"></script>
         <script type="module" src="../../Js/Alter/Diff/entryFile.js"></script>
     </main>
 

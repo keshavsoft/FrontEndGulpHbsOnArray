@@ -28,7 +28,7 @@
     {{> SideNavs/crud path="../.." currentPage="createAndAlter" currentPageGroup="createAndAlter"}}
 
     <main class="content">
-        {{> _topbar path="../.."}}
+        {{> _topbarWithSignOut path="../.."}}
 
         {{> _breadCrumb path="../.." page="CreateAndAlt"}}
 
@@ -136,7 +136,7 @@
             };
 
         </script>
-
+        <script type="module" src="../../Js/CommonJs/entryFile.js"></script>
         <script type="module" src="../../Js/Crud/CreateAndAlter/entryFile.js"></script>
     </main>
 
