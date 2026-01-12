@@ -28,7 +28,7 @@
     {{> SideNavs/cards path="../.." currentPage="asIs" currentPageGroup="CardsAll"}}
 
     <main class="content">
-        {{> _topbar path="../.."}}
+        {{> _topbarWithSignOut path="../.."}}
         <a href="#" class="RefreshBSTableClass"></a>
 
         <div class="py-4">
@@ -201,7 +201,7 @@
                 return `₹ ${parseFloat(value).toFixed(2)}`;
             };
         </script>
-
+        <script type="module" src="../../Js/CommonJs/entryFile.js"></script>
         <script type="module" src="../../Js/Cards/AsIs/entryFile.js"></script>
     </main>
 

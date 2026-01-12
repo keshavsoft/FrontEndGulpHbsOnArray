@@ -29,7 +29,7 @@
 
 
     <main class="content">
-        {{> _topbar path="../.."}}
+        {{> _topbarWithSignOut path="../.."}}
 
         {{> _breadCrumb path="../.." page="totals"}}
 
@@ -93,7 +93,7 @@
                 if (value === null || value === undefined || value === '') return '';
                 return `₹ ${parseFloat(value).toFixed(2)}`;
             };</script>
-
+        <script type="module" src="../../Js/CommonJs/entryFile.js"></script>
         <script type="module" src="../../Js/Alter/Totals/entryFile.js"></script>
     </main>
 
