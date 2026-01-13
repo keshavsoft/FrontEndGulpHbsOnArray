@@ -120,6 +120,7 @@
         }
     ],
     "Protected": {
-        "RedirectUrl": "../Authentication/sign-in.html"
+        "RedirectUrl1": "../Authentication/sign-in.html",
+        "RedirectUrl": "../Authentication/signInV1.html"
     }
 }

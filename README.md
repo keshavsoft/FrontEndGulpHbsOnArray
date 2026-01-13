@@ -381,3 +381,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.44
 
 - balanceSimple total balance perfect
+
+### 1.1.45
+
+- signInV1.html more perfect
