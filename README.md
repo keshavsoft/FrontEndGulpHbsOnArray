@@ -389,3 +389,7 @@ Instagram: <https://www.instagram.com/themesberg/>
 ### 1.1.46
 
 - signInV2.html for data pk
+
+### 1.1.47
+
+- signInV1.html hooked in js

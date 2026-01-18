@@ -50,6 +50,10 @@
             "autoFocus": "title"
         }
     },
+    "SubRoutes": [
+        "Read",
+        "Insert"
+    ],
     "Secured": {
         "SubRoutes": [
             "Read",
